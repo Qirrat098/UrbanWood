@@ -1,7 +1,7 @@
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 100px 0;
+  background: url('/public/sofa.jpg') center center/cover no-repeat;
+  color: rgb(0, 0, 0);
+  padding: 230px 0;
   text-align: center;
 }
 
