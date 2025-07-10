@@ -1,6 +1,6 @@
 .navbar {
-  background-color: #2c3e50;
-  padding: 1rem 0;
+  background-color: #181818;
+  padding: 1.06rem 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -20,13 +20,13 @@
 .nav-logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #3498db;
+  color: #e8e8e8;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .nav-logo:hover {
-  color: #2980b9;
+  color: #3498db;
 }
 
 .nav-menu {
@@ -48,7 +48,7 @@
 .nav-link:hover,
 .nav-link.active {
   color: #3498db;
-  background-color: rgba(52, 152, 219, 0.1);
+  background-color: rgba(192, 226, 249, 0.1);
 }
 
 .cart-icon {
@@ -61,7 +61,7 @@
 }
 
 .cart-icon:hover {
-  background-color: rgba(52, 152, 219, 0.1);
+  background-color: rgba(192, 226, 249, 0.1);
 }
 
 .cart-symbol {

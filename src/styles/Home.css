@@ -1,7 +1,9 @@
 .hero {
-  background: url('/public/sofa.jpg') center center/cover no-repeat;
-  color: rgb(0, 0, 0);
-  padding: 230px 0;
+   background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('/sofa.jpg') center center/cover no-repeat;
+  color: white;
+  padding: 250px 0;
   text-align: center;
 }
 
@@ -13,25 +15,53 @@
 
 .hero-content p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   opacity: 0.9;
 }
 
 .cta-button {
-  display: inline-block;
-  background-color: #3498db;
-  color: white;
-  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  letter-spacing: 1px;
+  padding: 1rem 2rem 1rem;
+  outline: 0;
+  border: 2px solid #222;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: background-color 0.3s, transform 0.3s;
 }
 
-.cta-button:hover {
-  background-color: #2980b9;
-  transform: translateY(-2px);
+.cta-button::after {
+  content: "";
+  background-color:#3498db;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  transition: 0.2s;
+}
+
+.cta-button:hover::after,
+.cta-button:focus::after {
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .cta-button {
+    padding: 1rem 3rem 1rem;
+  }
 }
 
 .featured-products {
